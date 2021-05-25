@@ -1,0 +1,6 @@
+http://localhost:9010/oauth/authorize?response_type=code&client_id=client-esoft-backoffice&scope=read_profile_info&state=tWyUF89JA-4SwdUEe3YRHXGVJcwyQeidp65mUtE3WL8%3D&redirect_uri=http://editor.local/login
+
+
+curl -X POST --user client-esoft-backoffice:123456 http://localhost:9010/oauth/token \
+        -H "content-type: application/x-www-form-urlencoded" \
+        -d "code=kKU31y&grant_type=authorization_code&redirect_uri=http://editor.local/login&scope=read_profile_info"
